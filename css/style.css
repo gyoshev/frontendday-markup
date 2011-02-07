@@ -1,0 +1,44 @@
+﻿html, body { margin: 0; padding: 0; }
+
+html
+{
+    font-size: 100%;
+}
+
+body
+{
+    font: .75em/1.5 Arial, Helvetica, sans-serif;
+    background-color: #121517;
+    color: #757777;
+}
+
+#page
+{
+    width: 320px;
+    padding-left: 620px;
+    margin: 0 auto;
+    position: relative;
+}
+
+footer, header, nav, section
+{
+    display: block;
+}
+
+a
+{
+    color: #ffc108;
+}
+
+h2
+{
+    color: #ffc108;
+    text-transform: uppercase;
+}
+
+header
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+}
