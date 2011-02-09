@@ -43,8 +43,8 @@
                 It's a huge and growing family, whose needs shape our roadmap. Join in.
             </p>
 
-            <section>
-                <h2 id="speakers">Speakers</h2>
+            <section id="speakers">
+                <h2>Speakers</h2>
 
                 <ul>
                     <li class="vcard">
@@ -62,17 +62,24 @@
                 </ul>
             </section>
 
-            <section>
-                <h2 id="schedule">Schedule</h2>
+            <section id="schedule">
+                <h2>Schedule</h2>
 
                 <h3>Title of the lecture</h3>
                 <p>Lecture description</p>
             </section>
 
+            <section id="social">
+                <a href="http://twitter.com/FrontEndDay"><span class="icon twitter"></span>our Twitter feed</a>
+                <div id="tweets"></div>
+
+                <a href="http://www.facebook.com/Telerik?v=info"><span class="icon facebook"></span>connect with us on Facebook</a>
+            </section>
+
             <footer>
                 <div id="sponsored-by">
                     sponsored by:
-                    <img src="" alt="Telerik" />
+                    <a href="http://www.telerik.com/"><img src="css/images/telerik-logo.png" alt="Telerik" /></a>
                 </div>
 
                 <p id="social-links">
@@ -80,8 +87,15 @@
                     <a href="http://www.facebook.com/Telerik?v=info">Facebook</a>
                 </p>
 
-                <p id="copyright">Copyright © 2011 Telerik. All rights reserved.</p>
+                <p id="copyright">Copyright &copy; 2011 Telerik. All rights reserved.</p>
             </footer>
         </div>
+
+        <script>
+            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;
+            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)}(document,'script'));
+        </script>
     </body>
 </html>
