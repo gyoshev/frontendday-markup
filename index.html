@@ -18,10 +18,10 @@
                 <h1>Front-end Day</h1>
 
                 <dl>
-                    <dt>when</dt>
+                    <dt class="action">when</dt>
                     <dd>26 - 27 April, 2011</dd>
 
-                    <dt>where</dt>
+                    <dt class="action">where</dt>
                     <dd>Elieff Center, Sofia, Bulgaria</dd>
                 </dl>
             </header>
@@ -31,7 +31,7 @@
                     <li><a href="#speakers">Speakers</a></li>
                     <li><a href="#schedule">Schedule</a></li>
                     <li><a href="#location">Location</a></li>
-                    <li><a href="#contact-us">Contact us</a></li>
+                    <li class="last"><a href="#contact-us">Contact us</a></li>
                 </ul>
             </nav>
 
@@ -43,37 +43,36 @@
                 It's a huge and growing family, whose needs shape our roadmap. Join in.
             </p>
 
+            <dl>
+                <dt class="action">want to attend?</dt>
+                <dd><a href="#"><span class="icon mail"></span>contact us</a></dd>
+                <dd><a href="#"><span class="icon calendar"></span>add to calendar</a></dd>
+            </dl>
+
             <section id="speakers">
                 <h2>Speakers</h2>
 
-                <ul>
+                <ul id="speakers-list">
                     <li class="vcard">
                         <img class="photo" src="speakers/ppk.jpg" alt="Photo of Peter-Paul Koch" />
-                        <span class="fn">Peter-Paul Koch</span>
-                        Mobile platform strategist
+                        <div class="fn">Peter-Paul Koch</div>
+                        Mobile platform strategist<br />
                         at <span class="org">QuirksMode.org</span>
                     </li>
                     <li class="vcard">
                         <img class="photo" src="speakers/gyoshev.jpg" alt="Photo of Alexander Gyoshev" />
-                        <span class="fn">Alexander Gyoshev</span>
-                        Front-end developer
+                        <div class="fn">Alexander Gyoshev</div>
+                        Front-end developer<br />
                         at <span class="org">Telerik</span>
                     </li>
                 </ul>
             </section>
 
-            <section id="schedule">
-                <h2>Schedule</h2>
-
-                <h3>Title of the lecture</h3>
-                <p>Lecture description</p>
-            </section>
-
             <section id="social">
-                <a href="http://twitter.com/FrontEndDay"><span class="icon twitter"></span>our Twitter feed</a>
+                <a href="http://twitter.com/FrontEndDay" class="action"><span class="icon twitter"></span>our Twitter feed</a>
                 <div id="tweets"></div>
 
-                <a href="http://www.facebook.com/Telerik?v=info"><span class="icon facebook"></span>connect with us on Facebook</a>
+                <a href="http://www.facebook.com/Telerik?v=info" class="action"><span class="icon facebook"></span>connect with us on Facebook</a>
             </section>
 
             <footer>

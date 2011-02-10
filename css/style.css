@@ -8,13 +8,49 @@ html
 body
 {
     font: .75em/1.5 Arial, Helvetica, sans-serif;
-    background: #121517 url("images/background.png") fixed no-repeat 38% 0;
+    background-color: #121517;
     color: #757777;
+}
+
+h1
+{
+    font-size: 22px;
+    font-weight: normal;
+}
+
+h1, h2
+{
+    color: #ffc108;
+}
+
+dt
+{
+    line-height: 26px;
+    border-right: 1px solid #412c13;
+    float: left;
+    clear: left;
+}
+
+header dt
+{
+    width: 43px;
+    padding-right: 7px;
+    text-align: right;
+}
+
+header dd
+{
+    color: #ff8a02;
+    font-size: 22px;
+    line-height: 26px;
+    padding-left: 9px;
+    float: left;
+    margin: 0;
 }
 
 #page
 {
-    width: 320px;
+    width: 360px;
     padding-left: 620px;
     margin: 0 auto;
     position: relative;
@@ -25,14 +61,13 @@ footer, header, nav, section
     display: block;
 }
 
-a
+a, .action
 {
     color: #ffc108;
 }
 
 header,
-#social,
-#sponsored-by
+#social
 {
     position: fixed;
     left: 50%;
@@ -54,11 +89,6 @@ header h1
     overflow: hidden;
 }
 
-h1, h2
-{
-    color: #ffc108;
-}
-
 nav ul
 {
     margin: 0;
@@ -74,6 +104,23 @@ nav li
     display: inline-block;
     *display: inline;
     zoom: 1;
+    margin-right: 26px;
+}
+
+nav .last
+{
+    margin-right: 0;
+}
+
+nav a
+{
+    color: #ff8a02;
+    text-decoration: none;
+}
+
+nav a:hover
+{
+    color: #ffc108;
 }
 
 h2
@@ -103,6 +150,79 @@ footer
 {
     top: 300px;
     padding-left: 50px;
+    width: 240px;
+}
+
+#social .action,
+#tweets
+{
+    border-bottom: 1px solid #5e3c14;
+    padding-bottom: 5px;
+    display: block;
+}
+
+.action .icon
+{
+    margin-right: 5px;
+}
+
+#tweets
+{
+    font-size: 11px;
+    overflow: hidden;
+    height: 250px;
+    margin-bottom: 9px;
+}
+
+.action
+{
+    font-size: 10px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.tweet_list
+{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.tweet_list li
+{
+    margin-bottom: 10px;
+}
+
+.tweet_time a
+{
+    color: #ff8a02;
+}
+
+#speakers
+{
+    margin: 50px 0;
+}
+
+#speakers-list
+{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.vcard
+{
+    width: 150px;
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+}
+
+.fn
+{
+    color: #ffc108;
+    font-size: 14px;
+    line-height: 26px;
 }
 
 #sponsored-by
@@ -130,4 +250,23 @@ footer
 {
     color: #ff8a02;
     border-top: 1px solid #5a3811;
+}
+
+@media screen and (min-width: 980px) 
+{
+    body 
+    {
+        background: #121517 url("images/background.png") fixed no-repeat 38% 0;
+    }
+}
+
+@media screen and (min-height: 740px) 
+{
+    #sponsored-by
+    {
+        position: fixed;
+        left: 50%;
+        width: 620px;
+        margin-left: -470px;
+    }
 }
