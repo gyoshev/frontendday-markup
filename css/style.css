@@ -302,6 +302,11 @@ footer
     margin-top: 7px;
 }
 
+.contact .url
+{
+    text-indent: -1000em;
+}
+
 #sponsored-by
 {
     bottom: 0;
