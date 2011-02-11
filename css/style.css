@@ -159,6 +159,11 @@ footer
 .twitter { background-position: -46px -127px; }
 .facebook { background-position: -69px -127px; }
 .blog { background-position: -92px -127px; }
+a:hover .mail { background-position: 0 -149px; }
+a:hover .calendar { background-position: -23px -149px; }
+a:hover .twitter  , a.twitter:hover{ background-position: -46px -149px; }
+a:hover .facebook { background-position: -69px -149px; }
+a:hover .blog , a.blog:hover{ background-position: -92px -149px; }
 
 #social
 {
@@ -242,6 +247,11 @@ footer
     margin-bottom: 14px;
     position: relative;
     line-height: 32px;
+}
+
+#attending a:hover
+{
+	background-color: #ffc108;
 }
 
 #attending .icon
