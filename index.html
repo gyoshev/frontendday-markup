@@ -10,19 +10,44 @@
         <link rel="shortcut icon" href="/favicon.ico">
 
         <link rel="stylesheet" href="css/style.css?v=1">
+
+        <!--[if lte IE 8]>
+        <script>(function(c){c('header'),c('nav'),c('section'),c('article'),c('footer')})(document.createElement);</script>
+        <![endif]-->
     </head>
 
     <body>
+        <script>
+            window.onresize = function() {
+                var windowHeight = (window.innerHeight || document.documentElement.clientHeight),
+                    windowWidth = (window.innerWidth || document.documentElement.clientWidth),
+                    classNames = [],
+                    isIE6/*@cc_on @if (@_jscript_version <= 5.6) =1/*@end @*/;
+
+                if (!isIE6) {
+                    if (windowHeight > 740)
+                        classNames.push("tall");
+
+                    if (windowWidth > 980)
+                        classNames.push("wide");
+                }
+
+                document.body.className = classNames.join(' ');
+            }
+
+            window.onresize();
+        </script>
+
         <div id="page">
-            <header>
-                <h1>Front-end Day</h1>
+            <header class="vevent">
+                <h1 class="summary">Front-end Day</h1>
 
                 <dl>
                     <dt class="action">when</dt>
-                    <dd>26 - 27 April, 2011</dd>
+                    <dd><time datetime="2011-04-26" class="dstart">26</time> - <time datetime="2011-04-27" class="dtend">27 April, 2011</time></dd>
 
                     <dt class="action">where</dt>
-                    <dd>Elieff Center, Sofia, Bulgaria</dd>
+                    <dd class="location">Elieff Center, Sofia, Bulgaria</dd>
                 </dl>
             </header>
 
@@ -46,8 +71,8 @@
 
                 <dl id="attending">
                     <dt class="action">want to attend?</dt>
-                    <dd><a href="#"><span class="icon mail"></span>contact us</a></dd>
-                    <dd><a href="#"><span class="icon calendar"></span>add to calendar</a></dd>
+                    <dd><a href="mailto:info@frontendday.com"><span class="icon mail"></span>contact us</a></dd>
+                    <dd><a href="http://lanyrd.com/2011/frontday/frontday.ics"><span class="icon calendar"></span>add to calendar</a></dd>
                 </dl>
             </section>
 
@@ -78,11 +103,31 @@
                 </ul>
             </section>
 
-            <section id="social">
-                <a href="http://twitter.com/FrontEndDay" class="action"><span class="icon twitter"></span>our Twitter feed</a>
-                <div id="tweets"></div>
+            <section id="schedule">
+                <h2>Schedule</h2>
 
-                <a href="http://www.facebook.com/Telerik?v=info" class="action"><span class="icon facebook"></span>connect with us on Facebook</a>
+                <ul id="lectures">
+                    <li>
+                        <h3>Title of the lecture</h3>
+
+                        <p>
+                            Be part of one of the biggest .NET communities.
+                            420,000 registered users are there to help and discuss with you.
+                            550,000 forum posts are likely to have answers to your questions.
+                            It's a huge and growing family, whose needs shape our roadmap. Join in.
+                        </p>
+                    </li>
+                    <li>
+                        <h3>Title of the lecture</h3>
+
+                        <p>
+                            Be part of one of the biggest .NET communities.
+                            420,000 registered users are there to help and discuss with you.
+                            550,000 forum posts are likely to have answers to your questions.
+                            It's a huge and growing family, whose needs shape our roadmap. Join in.
+                        </p>
+                    </li>
+                </ul>
             </section>
 
             <footer>
