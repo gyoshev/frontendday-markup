@@ -59,6 +59,11 @@ h3
     text-transform: uppercase;
 }
 
+dl
+{
+    overflow: hidden;
+}
+
 dt
 {
     line-height: 26px;
@@ -80,8 +85,7 @@ header dd
     font-weight: bold;
     font-size: 22px;
     line-height: 26px;
-    padding-left: 9px;
-    float: left;
+    padding-left: 55px;
     margin: 0;
 }
 
@@ -136,11 +140,12 @@ header
 
 header h1
 {
-    width: 386px;
-    height: 127px;
-    background: transparent url('images/sprite.png') no-repeat 0 0;
-    text-indent: -1000em;
     overflow: hidden;
+}
+
+header img
+{
+    max-width: 100%;
 }
 
 nav
@@ -188,9 +193,9 @@ h2
     text-transform: uppercase;
 }
 
-#about h1
+.wide #about h1
 {
-    margin-top: 70px;
+    margin-top: 3.2em;
 }
 
 footer
@@ -209,16 +214,21 @@ footer
     background-image: url('images/sprite.png');
 }
 
-.mail { background-position: 0 -127px; }
-.calendar { background-position: -23px -127px; }
-.twitter { background-position: -46px -127px; }
-.facebook { background-position: -69px -127px; }
-.blog { background-position: -92px -127px; }
-a:hover .mail { background-position: 0 -149px; }
-a:hover .calendar { background-position: -23px -149px; }
-a:hover .twitter  , a.twitter:hover{ background-position: -46px -149px; }
-a:hover .facebook { background-position: -69px -149px; }
-a:hover .blog , a.blog:hover{ background-position: -92px -149px; }
+.contact .url
+{
+    width: 22px;
+}
+
+.mail { background-position: 0 0; }
+.calendar { background-position: -23px 0; }
+.twitter { background-position: -46px 0; }
+.facebook { background-position: -69px 0; }
+.blog { background-position: -92px 0; }
+a:hover .mail { background-position: 0 -22px; }
+a:hover .calendar { background-position: -23px -22px; }
+a:hover .twitter  , a.twitter:hover{ background-position: -46px -22px; }
+a:hover .facebook { background-position: -69px -22px; }
+a:hover .blog , a.blog:hover{ background-position: -92px -22px; }
 
 #social,
 .wide #social
@@ -338,13 +348,13 @@ a:hover .blog , a.blog:hover{ background-position: -92px -149px; }
     display: inline-block;
     *display: inline;
     zoom: 1;
+    margin-right: 5px;
     position: relative;
-    margin-right: 50px;
 }
 
-.odd
+.wide .vcard
 {
-    margin-right: 0;
+    margin-right: 25px;
 }
 
 .fn
